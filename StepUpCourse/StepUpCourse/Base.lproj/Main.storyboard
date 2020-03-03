@@ -20,6 +20,10 @@
                                 <rect key="frame" x="191.5" y="430" width="31" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="onGoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kM-d2-BtN"/>
+                                    <segue destination="BDx-1Z-bCm" kind="show" id="kyo-l4-P2N"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -35,6 +39,34 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="k4x-X1-en9">
+            <objects>
+                <viewController id="BDx-1Z-bCm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eRI-Yp-l0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, SWTecNN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAh-Ol-CcF">
+                                <rect key="frame" x="130" y="436" width="154.5" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16236776110000001" green="0.54109603169999998" blue="0.92526304719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UAh-Ol-CcF" firstAttribute="centerX" secondItem="eRI-Yp-l0Y" secondAttribute="centerX" id="1sZ-kE-5xA"/>
+                            <constraint firstItem="UAh-Ol-CcF" firstAttribute="centerY" secondItem="eRI-Yp-l0Y" secondAttribute="centerY" id="fGf-Nb-Snm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5XS-uJ-Un0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ppk-Uv-dwH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxF-7n-Pz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024" y="152"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="nbl-iU-Gaa">
             <objects>
@@ -46,7 +78,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mja-qM-iqs"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uTK-zj-SRc"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJU-RX-Rvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
